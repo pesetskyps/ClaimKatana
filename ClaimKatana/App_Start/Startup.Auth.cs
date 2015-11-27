@@ -16,6 +16,7 @@ namespace ClaimKatana
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
+                CookieName = "smash-aut",
                 AuthenticationMode = Microsoft.Owin.Security.AuthenticationMode.Active,
                 LoginPath = new PathString("/Account/Login")
             });
@@ -34,10 +35,11 @@ namespace ClaimKatana
                 MetadataAddress = "https://antarikshplex.cloudapp.net/FederationMetadata/2007-06/FederationMetadata.xml",
                 AuthenticationType = "Plex ADFS",
                 Caption = "Plex Domain",
+                
                 BackchannelCertificateValidator = null,
                 //localhost
-                Wreply = "https://plexadfstest.azurewebsites.net/Account/LoginCallbackPlexAdfs",
-                Wtrealm = "https://plexadfstest.azurewebsites.net/Account/LoginCallbackPlexAdfs"
+                Wreply = "https://localhost:44301/Account/LoginCallbackIndiaPlextestAdfs",
+                Wtrealm = "https://localhost:44301/Account/LoginCallbackIndiaPlextestAdfs"
             };
 
             //configure IndiaUniverse ADFS middleware

@@ -19,7 +19,7 @@ namespace ClaimKatana.Controllers
             : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
         {
         }
-
+asda
         public AccountController(UserManager<ApplicationUser> userManager)
         {
             UserManager = userManager;
