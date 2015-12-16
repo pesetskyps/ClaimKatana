@@ -22,6 +22,7 @@ namespace ClaimKatana
             {
                 return true;
             };
+            console.writeline("bla")
         }
     }
 }
