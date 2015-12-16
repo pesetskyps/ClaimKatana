@@ -9,7 +9,7 @@ namespace ClaimKatana.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(int bla5)
+        public ActionResult Index(int bla6)
         {
             return View();
         }
